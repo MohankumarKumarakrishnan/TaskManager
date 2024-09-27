@@ -7,7 +7,7 @@ const getTasks = async (req, res) => {
     const tasks = await TaskServiceInstance.find();
     res.status(200).json(tasks);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: err.message })
   }
 };
 
